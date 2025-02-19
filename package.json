@@ -39,7 +39,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:dev:server": "node ./json-server/index.js",
-    "postbuild": "npm run start:dev:server"
   },
   "eslintConfig": {
     "extends": [
