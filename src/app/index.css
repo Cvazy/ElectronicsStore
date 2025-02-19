@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  transition: .3s all;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+*::selection {
+  background: #DFDFDF;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea {
+  outline: none;
+}
+
+textarea {
+  transition-property: none;
+}
+
+@layer components {
+  .nav_link {
+    @apply text-nowrap font-medium text-base
+  }
+
+  .active_nav_link {
+    @apply text-black
+  }
+
+  .inactive_nav_link {
+    @apply text-[#B2B2B2] hover:text-black
+  }
+
+  .main_button {
+    @apply rounded-lg text-center align-middle font-medium border border-solid
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  @apply !w-[30px] !h-[7px] !rounded-md !bg-[#e7e7e7]
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-white
+}
+
+.swiper-slide {
+  @apply self-center
+}
+
+.swiper-pagination {
+  @apply !bottom-4
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !w-[32px] !h-[32px] !text-black !mt-0 !top-0 after:!text-2xl after:content-[""]
+}
+
+.swiper-button-next {
+  @apply !right-0
+}
+
+.swiper-button-prev {
+  @apply !right-[48px] !left-[unset]
+}
+
+.product_slider .swiper-slide {
+  opacity: 0.4;
+}
+
+.product_slider .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.product_slider .swiper-wrapper {
+  @apply !flex items-center justify-between sm:justify-center gap-4 md:gap-5 lg:flex-col xl:gap-6 lg:justify-start
+}
+
+.add_address {
+  @apply flex justify-center relative w-full
+}
+
+.add_address:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: calc(50% + 12px);
+  right: 0;
+  border: 1px dashed black;
+}
+
+.add_address:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: calc(50% + 12px);
+  left: 0;
+  border: 1px dashed black;
+}
+
+.textarea_not_corner::-webkit-resizer {
+  display: none;
+}

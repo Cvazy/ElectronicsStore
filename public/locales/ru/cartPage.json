@@ -1,0 +1,18 @@
+{
+  "Shopping Cart": "Корзина покупок",
+  "Order Summary": "Описание заказа",
+  "Checkout": "Оформить",
+  "Discount code / Promo code": "Скидочный код / Промокод",
+  "Code": "Код",
+  "Apply": "Применить",
+  "Subtotal": "Промежуточный итог",
+  "Estimated Tax": "Предполагаемый налог",
+  "Estimated shipping & Handling": "Предполагаемая стоимость доставки и обработки",
+  "Total": "Итого",
+  "Your shopping cart is still empty": "Ваша корзина пока пуста",
+  "Ready for shopping": "К покупкам",
+  "The data about the shopping cart could not be retrieved": "Не удалось получить данные о корзине",
+  "An error occurred when deleting the product": "При удалении товара произошла ошибка",
+  "An unexpected error occurred when changing the quantity of the product": "Произошла непредвиденная ошибка при изменении количества товара",
+  "Erroneous or non-existent code": "Ошибочный или несуществующий код"
+}
