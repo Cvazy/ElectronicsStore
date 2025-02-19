@@ -14,7 +14,9 @@ export const FetchProductData = createAsyncThunk(
     { dispatch, rejectWithValue },
   ) => {
     try {
-      const response = await axios.get(`${serverUrl}/products/${productId}`);
+      const response = await axios.get(`${serverUrl}/products?id=${productId}`);
+
+      console.log(response.data)
 
       dispatch(productActions.setProductData(response.data));
 
