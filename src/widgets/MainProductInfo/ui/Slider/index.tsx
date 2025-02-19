@@ -31,7 +31,7 @@ export const ProductSlider = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, FreeMode, Thumbs]}
-        className={"max-h-[516px] w-full max-w-[413px] sm:max-w-full"}
+        className={"max-h-[516px] w-full max-w-[413px] sm:max-w-full lg:w-[70%]"}
       >
         {imagesGallery?.map((el) => (
           <SwiperSlide
@@ -82,7 +82,7 @@ export const ProductSlider = () => {
               src={el}
               alt={name}
               className={
-                "max-w-[75px] select-none max-h-[66px] min-h-[auto] sm:max-h-[76px] md:max-h-[86px] lg:max-h-[96px]"
+                "max-w-[75px] select-none max-h-[66px] h-fit min-h-[auto] sm:max-h-[76px] md:max-h-[86px] lg:max-h-[96px]"
               }
               loading={"lazy"}
               draggable={false}
